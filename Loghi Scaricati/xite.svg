@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="815.44727"
+   height="355.48273"
+   viewBox="0 0 815.44727 355.48273"
+   version="1.1"
+   id="svg519"
+   sodipodi:docname="xite.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview521"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1760417"
+     inkscape:cx="411.97519"
+     inkscape:cy="186.64304"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg519" />
+  <defs
+     id="defs507">
+    <mask
+       id="a"
+       x="84"
+       y="96.48"
+       width="591.12"
+       height="328.35"
+       maskUnits="userSpaceOnUse">
+      <path
+         d="M 379.58,96.48 H 84.06 V 424.76 H 675.12 V 96.48 Z"
+         fill="#ffffff"
+         fill-rule="evenodd"
+         id="path504" />
+    </mask>
+  </defs>
+  <g
+     style="isolation:isolate;fill:#ffffff"
+     id="g513"
+     transform="translate(-68.024803,-83.330383)">
+    <text
+       transform="translate(686.85,426.08)"
+       font-size="136.5px"
+       font-family="Arial-BoldMT, Arial"
+       font-weight="700"
+       style="isolation:isolate;fill:#ffffff"
+       id="text511">HD</text>
+  </g>
+  <g
+     mask="url(#a)"
+     id="g517"
+     transform="translate(-68.024803,-83.330383)"
+     style="fill:#ffffff">
+    <path
+       d="m 298.53,96.48 h 74.61 V 424.81 H 298.53 V 96.49 m 125.13,59.09 h -38.25 v -59.1 h 151.12 v 59.1 H 498.27 V 424.82 H 423.65 V 155.57 M 548.8,96.48 h 126.32 v 59.09 h -51.7 v 72.23 h 37.64 v 59.11 h -37.64 v 78.79 h 51.66 v 59.11 H 548.81 V 96.48 M 281.46,424.82 232.33,257.16 281.44,96.48 h -79.83 l -18.88,116.2 -18.9,-116.2 H 84 L 133.14,257.17 84,424.83 h 79.83 l 18.9,-116.21 18.91,116.2 h 79.81"
+       fill-rule="evenodd"
+       id="path515"
+       style="fill:#ffffff" />
+  </g>
+</svg>
