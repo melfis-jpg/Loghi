@@ -1,6 +1,6 @@
 #EXTINF:-1,Sky Sport Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://www.kool.to/play/3192996672/index.m3u8
+https://www.kool.to/play/1665920101/index.m3u8
 
 #EXTINF:-1,Sky Sport Uno
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
@@ -8,8 +8,12 @@ https://www.kool.to/play/3192996672/index.m3u8
 
 #EXTINF:-1,Dazn 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://www.kool.to/play/3192996672/index.m3u8
+https://www.kool.to/play/1376440573/index.m3u8
 
 #EXTINF:-1,Dazn 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://www.kool.to/play/3192996672/index.m3u8
+https://www.kool.to/play/363506221/index.m3u8
+
+#EXTINF:-1,Sky Sport football (Eventi Durante La Live)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://www.kool.to/play/1989309231/index.m3u8
