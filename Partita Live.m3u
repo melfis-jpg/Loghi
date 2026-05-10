@@ -1,7 +1,15 @@
-#EXTINF:-1,Sky Sport Calcio (Wifi Casa)
+#EXTINF:-1,Sky Sport Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://www.kool.to/play/449990998/index.m3u8
+https://www.kool.to/play/3192996672/index.m3u8
 
-#EXTINF:-1,Sky Sport Uno (Wifi Casa)
+#EXTINF:-1,Sky Sport Uno
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://kool.to/play/210669162/index.m3u8
+https://www.kool.to/play/3192996672/index.m3u8
+
+#EXTINF:-1,Dazn 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://www.kool.to/play/3192996672/index.m3u8
+
+#EXTINF:-1,Dazn 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://www.kool.to/play/3192996672/index.m3u8
