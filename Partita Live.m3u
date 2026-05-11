@@ -21,5 +21,5 @@ https://www.kool.to/play/1989309231/index.m3u8
 
 #EXTINF:-1,Canale Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-#EXTVLCOPT:http-referrer=https://calcio-streaming.life/ (inserisci qui l'URL esatto del sito)
+#EXTVLCOPT:http-referrer=https://calcio-streaming.life/ (https://calcio-streaming.life/)
 https://h4kuqqzp.39564828.net:8443/hls/g8yy3cfv128h5.m3u8?s=gp2R9Zo6F51Boo5x_sRNwQ&e=1778510481
