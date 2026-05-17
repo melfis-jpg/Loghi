@@ -19,3 +19,11 @@ https://www.kool.to/play/363506221/index.m3u8
 #EXTINF:-1,Sky Sport football (Eventi Durante La Live)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/1989309231/index.m3u8
+
+#EXTINF:-1,Sky Sport 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://www.kool.to/play/2775802255/index.m3u8
+
+#EXTINF:-1,Sky Sport F1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://www.kool.to/play/2289038972/index.m3u8
