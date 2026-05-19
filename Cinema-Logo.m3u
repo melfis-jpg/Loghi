@@ -88,7 +88,7 @@ https://www.kool.to/play/3439223610/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3803638765/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="Cartoon Network" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/cartoon-network-it.png",Cartoon Network
+#EXTINF:-1 tvg-id="CartoonNetwork.it" tvg-name="Cartoon Network" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/cartoon-network-it.png",Cartoon Network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/1289777017/index.m3u8
 
