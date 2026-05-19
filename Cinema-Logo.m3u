@@ -68,4 +68,101 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 
+#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NatGeo Wild" tvg-logo="http://bs-update.ddns.net/Android/logos/natgeowild-hd.png",NatGeo Wild
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
+
+#EXTINF:-1 tvg-id="NationalGeo.it" tvg-name="NationalGeo" tvg-logo="http://bs-update.ddns.net/Android/logos/nationalgeo-hd.png",NationalGeo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="Sky.Uno.it" tvg-name="History" tvg-logo="http://service.myvisio.life:80/images/98ddd35233c2a48ec3c558d365de6ed3.png",History
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="Focus.HD.it" tvg-name="Sky Focus" tvg-logo="http://service.myvisio.life:80/images/1818d506396d77b3d035f719885c4cd1.png",Sky Focus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="DMAX.it" tvg-name="Dmax" tvg-logo="http://service.myvisio.life:80/images/c9bec96248605dd0dd45bf4897115504.png",Dmax
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="Cartoon Network" tvg-logo="http://bs-update.ddns.net/Android/logos/cartoonnetwork-hd.png",Cartoon Network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="Nickelodeon.it" tvg-name="NickelOdeon" tvg-logo="http://bs-update.ddns.net/Android/logos/nickelodeon.png",NickelOdeon
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="Boomerang.it" tvg-name="Boomerang" tvg-logo="http://bs-update.ddns.net/Android/logos/boomerang.png",Boomerang
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="DeAKids.it" tvg-name="DeA Kids" tvg-logo="http://bs-update.ddns.net/Android/logos/deakids.png",DeA Kids
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 1" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTbQg4zQ0eGXlKl8imLu64LLJQX.jpg",PRIMAFILA 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 2" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jSG2mg1998DUAam6X9EA6SeJmqD.jpg" group-title="Primafila",PRIMAFILA 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 3" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vODpK9bXrLJLlVicRn3N5qmPwRq.jpg" group-title="Primafila",PRIMAFILA 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 4" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30t19PpvZ3GVw9nRsn7TjZh5qEr.jpg" group-title="Primafila",PRIMAFILA 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 5" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cUi789bFhCCAvUP0SQJfhJ4wbF3.jpg" group-title="Primafila",PRIMAFILA 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 6" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/edEDZwU3kZerqdylZsyCn7feH23.jpg" group-title="Primafila",PRIMAFILA 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 7" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5BDb2QGVZw8HqIQekWmcJE9usJt.jpg" group-title="Primafila",PRIMAFILA 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 8" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pvB3QU4X0xzZb1FmVbN4QzJHncM.jpg" group-title="Primafila",PRIMAFILA 8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 9" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/47dsw1jSOV0Be5zmy7CtLhYpqU.jpg" group-title="Primafila",PRIMAFILA 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 10" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 11" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 12" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 13" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 13
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 14" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 14
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 15" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 15
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 16" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 16
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
