@@ -8,11 +8,11 @@ https://www.kool.to/play/1665920101/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3192996672/index.m3u8
 
-#EXTINF:-1 tvg-id="DAZN1.it" tvg-name="Dazn 1" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/ListaTV/75a87a18c07d7e11487a04f2ceb4b4c60c22a6f8/Loghi%20Scaricati/DAZN%201%20HD.svg?token=B4AWDW3LMLGVWPVE7CH3AJLKBRAQS",Dazn 1
+#EXTINF:-1 tvg-id="DAZN1.it" tvg-name="Dazn 1" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/a7269f30b727ccefe8cad91e791767cd6aac4166/Loghi%20Scaricati/DAZN%201%20HD.svg",Dazn 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/1376440573/index.m3u8
 
-#EXTINF:-1 tvg-id="DAZN2.it" tvg-name="Dazn 2" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/ListaTV/75a87a18c07d7e11487a04f2ceb4b4c60c22a6f8/Loghi%20Scaricati/DAZN%202%20HD.svg?token=B4AWDW2QK2LX3WOQKMX24PTKBRAR4",Dazn 2
+#EXTINF:-1 tvg-id="DAZN2.it" tvg-name="Dazn 2" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/a7269f30b727ccefe8cad91e791767cd6aac4166/Loghi%20Scaricati/DAZN%202%20HD.svg",Dazn 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/363506221/index.m3u8
 
