@@ -1,4 +1,4 @@
 #EXTM3U USER-AGENT="IPTVSmartersPlayer"
 
-#EXTINF:-1, Calcio
+#EXTINF:-1,Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
