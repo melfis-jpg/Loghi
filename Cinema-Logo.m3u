@@ -1,4 +1,14 @@
 #EXTM3U USER-AGENT="IPTVSmartersPlayer"
 
-#EXTINF:-1,Calcio
+#EXTINF:-1 tvg-id="Sky.Cinema.Uno.it" tvg-name="Sky Cinema Uno" tvg-logo="http://service.myvisio.life:80/images/8249e7837b2c603ca86f826b621cb763.png",Sky Cinema Uno
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="Sky.Cinema.Uno.+24.it" tvg-name="Sky Cinema Uno +24" tvg-logo="http://service.fullapple.me:80/images/6fc402528bde38a87ef7d2a886d57cdd.png",Sky Cinema Uno +24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
+#EXTINF:-1 tvg-id="Sky.Cinema.Due.it" tvg-name="Sky Cinema Due" tvg-logo="http://service.myvisio.life:80/images/34a75b839104afefea66f32a1ede63ba.png",Sky Cinema Due
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+
