@@ -4,7 +4,7 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/1759625738/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaUno+24.it" tvg-name="Sky Cinema Uno +24" tvg-logo="http://service.fullapple.me:80/images/6fc402528bde38a87ef7d2a886d57cdd.png",Sky Cinema Uno +24
+#EXTINF:-1 tvg-id="SkyCinemaUno24.it" tvg-name="Sky Cinema Uno +24" tvg-logo="http://service.fullapple.me:80/images/6fc402528bde38a87ef7d2a886d57cdd.png",Sky Cinema Uno +24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/1699876530/index.m3u8
 
