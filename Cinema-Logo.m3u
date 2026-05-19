@@ -104,65 +104,65 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 1" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTbQg4zQ0eGXlKl8imLu64LLJQX.jpg",PRIMAFILA 1
+#EXTINF:-1 tvg-id="Primafila1.it" tvg-name="PRIMAFILA 1" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTbQg4zQ0eGXlKl8imLu64LLJQX.jpg",PRIMAFILA 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 2" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jSG2mg1998DUAam6X9EA6SeJmqD.jpg" group-title="Primafila",PRIMAFILA 2
+#EXTINF:-1 tvg-id="Primafila2.it" tvg-name="PRIMAFILA 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 3" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vODpK9bXrLJLlVicRn3N5qmPwRq.jpg" group-title="Primafila",PRIMAFILA 3
+#EXTINF:-1 tvg-id="Primafila3.it" tvg-name="PRIMAFILA 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 4" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30t19PpvZ3GVw9nRsn7TjZh5qEr.jpg" group-title="Primafila",PRIMAFILA 4
+#EXTINF:-1 tvg-id="Primafila4.it" tvg-name="PRIMAFILA 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 5" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cUi789bFhCCAvUP0SQJfhJ4wbF3.jpg" group-title="Primafila",PRIMAFILA 5
+#EXTINF:-1 tvg-id="Primafila5.it" tvg-name="PRIMAFILA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 6" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/edEDZwU3kZerqdylZsyCn7feH23.jpg" group-title="Primafila",PRIMAFILA 6
+#EXTINF:-1 tvg-id="Primafila6.it" tvg-name="PRIMAFILA 6" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 7" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5BDb2QGVZw8HqIQekWmcJE9usJt.jpg" group-title="Primafila",PRIMAFILA 7
+#EXTINF:-1 tvg-id="Primafila7.it" tvg-name="PRIMAFILA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 8" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pvB3QU4X0xzZb1FmVbN4QzJHncM.jpg" group-title="Primafila",PRIMAFILA 8
+#EXTINF:-1 tvg-id="Primafila8.it" tvg-name="PRIMAFILA 8" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 9" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/47dsw1jSOV0Be5zmy7CtLhYpqU.jpg" group-title="Primafila",PRIMAFILA 9
+#EXTINF:-1 tvg-id="Primafila9.it" tvg-name="PRIMAFILA 9" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 9
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 10" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 10
+#EXTINF:-1 tvg-id="Primafila10.it" tvg-name="PRIMAFILA 10" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 11" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 11
+#EXTINF:-1 tvg-id="Primafila11.it" tvg-name="PRIMAFILA 11" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 11
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 12" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 12
+#EXTINF:-1 tvg-id="Primafila12.it" tvg-name="PRIMAFILA 12" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 12
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 13" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 13
+#EXTINF:-1 tvg-id="Primafila13.it" tvg-name="PRIMAFILA 13" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 14" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 14
+#EXTINF:-1 tvg-id="Primafila14.it" tvg-name="PRIMAFILA 14" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 15" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 15
+#EXTINF:-1 tvg-id="Primafila15.it" tvg-name="PRIMAFILA 15" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMAFILA 16" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg" group-title="Primafila",PRIMAFILA 16
+#EXTINF:-1 tvg-id="Primafila16.it" tvg-name="PRIMAFILA 16" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
