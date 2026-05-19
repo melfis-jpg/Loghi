@@ -68,7 +68,7 @@ https://www.kool.to/play/1955739367/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3810188456/index.m3u8
 
-#EXTINF:-1 tvg-id="NatGeographicWild.it" tvg-name="NatGeo Wild" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/national-geographic-wild-it.png",National Geographic Wild
+#EXTINF:-1 tvg-id="NationalGeographicWild.it" tvg-name="NatGeo Wild" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/national-geographic-wild-it.png",National Geographic Wild
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3428501495/index.m3u8
 
