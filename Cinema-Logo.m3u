@@ -108,15 +108,15 @@ https://www.kool.to/play/1944682394/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://www.kool.to/play/525374356/index.m3u8
 
-#EXTINF:-1 tvg-id="Primafila3.it" tvg-name="PRIMAFILA 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 3
+#EXTINF:-1 tvg-id="PrimafilaCh3.it" tvg-name="PRIMAFILA 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://www.kool.to/play/573618724/index.m3u8
 
-#EXTINF:-1 tvg-id="Primafila4.it" tvg-name="PRIMAFILA 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 4
+#EXTINF:-1 tvg-id="SkyPrimafila4" tvg-name="PRIMAFILA 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://www.kool.to/play/3137990890/index.m3u8
 
-#EXTINF:-1 tvg-id="Primafila5.it" tvg-name="PRIMAFILA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 5
+#EXTINF:-1 tvg-id="Primafila5.sky.it" tvg-name="PRIMAFILA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-primafila-it.png",PRIMAFILA 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://www.kool.to/play/2255083866/index.m3u8
 
