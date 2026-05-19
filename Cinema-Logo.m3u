@@ -68,11 +68,11 @@ https://www.kool.to/play/1955739367/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3810188456/index.m3u8
 
-#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NatGeo Wild" tvg-logo="http://bs-update.ddns.net/Android/logos/natgeowild-hd.png",NatGeo Wild
+#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NatGeo Wild" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/national-geographic-wild-it.png",NatGeo Wild
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3428501495/index.m3u8
 
-#EXTINF:-1 tvg-id="NationalGeo.it" tvg-name="NationalGeo" tvg-logo="http://bs-update.ddns.net/Android/logos/nationalgeo-hd.png",NationalGeo
+#EXTINF:-1 tvg-id="NationalGeo.it" tvg-name="NationalGeo" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/national-geographic-it.png",NationalGeo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/179844839/index.m3u8
 
@@ -88,7 +88,7 @@ https://www.kool.to/play/3439223610/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3803638765/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="Cartoon Network" tvg-logo="http://bs-update.ddns.net/Android/logos/cartoonnetwork-hd.png",Cartoon Network
+#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="Cartoon Network" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/cartoon-network-it.png",Cartoon Network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/1289777017/index.m3u8
 
