@@ -44,7 +44,7 @@ https://www.kool.to/play/2711959620/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/2100771782/index.m3u8
 
-#EXTINF:-1 tvg-id="Eurosport1.it" tvg-name="Eurosport 1" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/7eadf3da32f94c478c728e2d764cb570b2079a5f/Loghi%20Scaricati/Eurosport%201%20HD.svg",Eurosport 1
+#EXTINF:-1 tvg-id="Eurosport.it" tvg-name="Eurosport 1" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/7eadf3da32f94c478c728e2d764cb570b2079a5f/Loghi%20Scaricati/Eurosport%201%20HD.svg",Eurosport 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://www.kool.to/play/3481346857/index.m3u8
 
