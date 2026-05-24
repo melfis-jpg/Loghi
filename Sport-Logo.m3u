@@ -1,4 +1,4 @@
-#EXTM3U USER-AGENT="IPTVSmartersPlayer"
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-it.xml.gz" USER-AGENT="IPTVSmartersPlayer"
 
 #EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="Sky Sport Calcio" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png",Sky Sport Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
