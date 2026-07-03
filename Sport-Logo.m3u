@@ -26,8 +26,8 @@ https://www.kool.to/play/2775802255/index.m3u8
 
 #EXTINF:-1 tvg-id="SkySportF1.it" tvg-name="Sky Sport F1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png",Sky Sport F1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://kool.to/watch?live=572249867746548af94af
 https://www.kool.to/play/2289038972/index.m3u8
-
 
 #EXTINF:-1 tvg-id="SkySportMax.it" tvg-name="Sky Sport Max" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-max-it.png",Sky Sport Max
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
@@ -39,7 +39,6 @@ https://www.kool.to/play/3007400791/index.m3u8
 
 #EXTINF:-1 tvg-id="SkySportNBA.it" tvg-name="Sky Sport NBA" tvg-logo="http://service.myvisio.life:80/images/b2c9751b876c3bc2658f00a37b0a3406.png",Sky Sport NBA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://kool.to/watch?live=572249867746548af94af
 https://www.kool.to/play/2711959620/index.m3u8
 
 #EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="Sky Sport Tennis" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-tennis-it.png",Sky Sport Tennis
