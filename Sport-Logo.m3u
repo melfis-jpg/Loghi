@@ -2,52 +2,65 @@
 
 #EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="Sky Sport Calcio" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png",Sky Sport Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://shouurvki7jtfax.ngolpdkyoctjcddxshli469r.org/sunshine/8Ik8m7_G_65-wt-cvzzRzOE4GREg1laKHxmLIgkCw1VSEwdZ4v_v4ZFgN2Ex2jxIojlmJi64-x93c_lTm93lJZDMD0sGqrMdYCTipCfJs0B3l0HSoQUSWMgDLkTnwh-qCVuSJvBNi5XAMAbn1b9-Z3ATJaToiQ4ojH5AkifGVa4oCsf4sRU5157ecFf2GF7YL1OzxA-b6vxfilDOJBTGbQ/hls/index.m3u8
 
 #EXTINF:-1 tvg-id="SkySportUno.it" tvg-name="Sky Sport Uno" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-uno-it.png",Sky Sport Uno
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=3192996672d2c923be0346
 
 #EXTINF:-1 tvg-id="ZONADAZN.IT" tvg-name="ZONA DAZN" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/a7269f30b727ccefe8cad91e791767cd6aac4166/Loghi%20Scaricati/DAZN%201%20HD.svg",Dazn 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=1376440573d46b3d682e20
 
 #EXTINF:-1 tvg-id="DAZN2.it" tvg-name="Dazn 2" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/a7269f30b727ccefe8cad91e791767cd6aac4166/Loghi%20Scaricati/DAZN%202%20HD.svg",Dazn 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=6843606058d0cc03250ea
 
 #EXTINF:-1 tvg-id="SkySportFootball.it" tvg-name="Sky Sport Football" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-football-it.png",Sky Sport Football
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=198930923100c09085a1ae
 
 #EXTINF:-1 tvg-id="SkySport24.it" tvg-name="Sky Sport 24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-24-it.png",Sky Sport 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=277580225585f503fbfc87
 
 #EXTINF:-1 tvg-id="SkySportF1.it" tvg-name="Sky Sport F1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png",Sky Sport F1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=22890389722acc4573933d
 
 #EXTINF:-1 tvg-id="SkySportMax.it" tvg-name="Sky Sport Max" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-max-it.png",Sky Sport Max
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=206632691678b853b73adb
 
 #EXTINF:-1 tvg-id="SkySportArena.it" tvg-name="Sky Sport Arena" tvg-logo="http://service.myvisio.life:80/images/4607604facccab8682e775038115c2d8.png",Sky Sport Arena
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=3007400791d5bc640207c3
 
 #EXTINF:-1 tvg-id="SkySportNBA.it" tvg-name="Sky Sport NBA" tvg-logo="http://service.myvisio.life:80/images/b2c9751b876c3bc2658f00a37b0a3406.png",Sky Sport NBA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=271195962000118dca31ce
 
 #EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="Sky Sport Tennis" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-tennis-it.png",Sky Sport Tennis
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=210077178262e76f204fa6
 
 #EXTINF:-1 tvg-id="Eurosport.it" tvg-name="Eurosport 1" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/7eadf3da32f94c478c728e2d764cb570b2079a5f/Loghi%20Scaricati/Eurosport%201%20HD.svg",Eurosport 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=34813468571b25fb16646d
 
 #EXTINF:-1 tvg-id="Eurosport2.it" tvg-name="Eurosport 2" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/7eadf3da32f94c478c728e2d764cb570b2079a5f/Loghi%20Scaricati/Eurosport%202%20HD.svg",Eurosport 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=http://kool.to/
 https://www.kool.to/watch?live=2283887097a4248311ff27
