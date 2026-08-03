@@ -3,4 +3,4 @@
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/refs/heads/main/Loghi/LiveStreamingLogo.png",Canale
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://kool.to/watch?live=277580225585f503fbfc87/hls/index.m3u8
+https://kool.to/watch?live=277580225585f503fbfc87/index.m3u8
