@@ -3,64 +3,64 @@
 #EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="Sky Sport Calcio" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png",Sky Sport Calcio
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportcalcio
+http://92.5.14.18:8080/play/skysportcalcio
 
 #EXTINF:-1 tvg-id="SkySportUno.it" tvg-name="Sky Sport Uno" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-uno-it.png",Sky Sport Uno
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportuno
+http://92.5.14.18:8080/play/skysportuno
 
 #EXTINF:-1 tvg-id="ZONADAZN.IT" tvg-name="ZONA DAZN" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/a7269f30b727ccefe8cad91e791767cd6aac4166/Loghi%20Scaricati/DAZN%201%20HD.svg",Dazn 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/dazn1
+http://92.5.14.18:8080/play/dazn1
 
 #EXTINF:-1 tvg-id="DAZN2.it" tvg-name="Dazn 2" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/a7269f30b727ccefe8cad91e791767cd6aac4166/Loghi%20Scaricati/DAZN%202%20HD.svg",Dazn 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/dazn2
+http://92.5.14.18:8080/play/dazn2
 
 #EXTINF:-1 tvg-id="SkySportFootball.it" tvg-name="Sky Sport Football" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-football-it.png",Sky Sport Football
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportfootball
+http://92.5.14.18:8080/play/skysportfootball
 
 #EXTINF:-1 tvg-id="SkySport24.it" tvg-name="Sky Sport 24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-24-it.png",Sky Sport 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysport24
+http://92.5.14.18:8080/play/skysport24
 
 #EXTINF:-1 tvg-id="SkySportF1.it" tvg-name="Sky Sport F1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png",Sky Sport F1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportf1
+http://92.5.14.18:8080/play/skysportf1
 
 #EXTINF:-1 tvg-id="SkySportMax.it" tvg-name="Sky Sport Max" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-max-it.png",Sky Sport Max
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportmax
+http://92.5.14.18:8080/play/skysportmax
 
 #EXTINF:-1 tvg-id="SkySportArena.it" tvg-name="Sky Sport Arena" tvg-logo="http://service.myvisio.life:80/images/4607604facccab8682e775038115c2d8.png",Sky Sport Arena
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportarena
+http://92.5.14.18:8080/play/skysportarena
 
 #EXTINF:-1 tvg-id="SkySportNBA.it" tvg-name="Sky Sport NBA" tvg-logo="http://service.myvisio.life:80/images/b2c9751b876c3bc2658f00a37b0a3406.png",Sky Sport NBA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysportnba
+http://92.5.14.18:8080/play/skysportnba
 
 #EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="Sky Sport Tennis" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-tennis-it.png",Sky Sport Tennis
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/skysporttennis
+http://92.5.14.18:8080/play/skysporttennis
 
 #EXTINF:-1 tvg-id="Eurosport.it" tvg-name="Eurosport 1" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/7eadf3da32f94c478c728e2d764cb570b2079a5f/Loghi%20Scaricati/Eurosport%201%20HD.svg",Eurosport 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/eurosport1
+http://92.5.14.18:8080/play/eurosport1
 
 #EXTINF:-1 tvg-id="Eurosport2.it" tvg-name="Eurosport 2" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/7eadf3da32f94c478c728e2d764cb570b2079a5f/Loghi%20Scaricati/Eurosport%202%20HD.svg",Eurosport 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
-https://streaming-logo.onrender.com/play/eurosport2
+http://92.5.14.18:8080/play/eurosport2
