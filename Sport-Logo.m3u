@@ -20,6 +20,14 @@ http://92.5.14.18:8080/play/dazn1
 #EXTVLCOPT:http-referrer=http://kool.to/
 http://92.5.14.18:8080/play/dazn2
 
+#EXTINF:-1 tvg-id="DAZN3.it" tvg-name="DAZN 3" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/refs/heads/main/Loghi%20Scaricati/DAZN%203%20HD.jpg",Dazn Sport 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/dazn3
+
+#EXTINF:-1 tvg-id="DAZN4.it" tvg-name="DAZN 4" tvg-logo="https://raw.githubusercontent.com/melfis-jpg/Loghi/refs/heads/main/Loghi%20Scaricati/DAZN%204%20HD.png",Dazn Sport 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/dazn4
+
 #EXTINF:-1 tvg-id="SkySportFootball.it" tvg-name="Sky Sport Football" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-football-it.png",Sky Sport Football
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=http://kool.to/
