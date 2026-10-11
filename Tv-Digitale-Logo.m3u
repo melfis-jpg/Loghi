@@ -1,0 +1,110 @@
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-it.xml.gz" USER-AGENT="IPTVSmartersPlayer"
+
+#EXTINF:-1 tvg-id="Rai1.it" tvg-name="Rai 1 FHD" tvg-logo="http://service.myvisio.life:80/images/b0879796d27e736de474a4bac4cd5cfe.png" group-title="Generali",Rai 1 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rai1
+
+#EXTINF:-1 tvg-id="Rai2.it" tvg-name="Rai 2 FHD" tvg-logo="http://service.myvisio.life:80/images/598b08714e3b45b565496de9a5cfb1df.png" group-title="Generali",Rai 2 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rai2
+
+#EXTINF:-1 tvg-id="Rai3.it" tvg-name="Rai 3 FHD" tvg-logo="http://service.myvisio.life:80/images/faf33a5c87e8efff495d5a9e77f8cb46.png" group-title="Generali",Rai 3 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rai3
+
+#EXTINF:-1 tvg-id="Rete4.it" tvg-name="Rete 4 FHD" tvg-logo="http://service.myvisio.life:80/images/f2da8d6445b9d1b2c2c3065b120b467d.png" group-title="Generali",Rete 4 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rete4
+#EXTINF:-1 tvg-id="Canale5.it" tvg-name="Canale 5 FHD" tvg-logo="http://service.myvisio.life:80/images/f239b986e3a2155a50420d8ce24de01f.png" group-title="Generali",Canale 5 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/canale5
+#EXTINF:-1 tvg-id="Italia1.it" tvg-name="Italia 1 FHD" tvg-logo="http://service.myvisio.life:80/images/48d328ccbef01c2fcd96db0198b836b2.png" group-title="Generali",Italia 1 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/italia1
+#EXTINF:-1 tvg-id="RSILA1.it" tvg-name="RSI LA 1" tvg-logo="http://service.fullapple.me:80/images/a4ba61532bc9b00dbca8d9edaf16e396.png" group-title="Generali",RSI LA 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rsila1
+#EXTINF:-1 tvg-id="RSILA2.it" tvg-name="RSI LA 2" tvg-logo="http://picon.koolmedia.live/images/1_0_19_4338_300C_13E_820000_0_0_0.png" group-title="Generali",RSI LA 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rsila2
+#EXTINF:-1 tvg-id="Mediaset27Twentyseven.it" tvg-name="Mediaset Twentyseven FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/3840px-Twentyseven_logo.svg.png" group-title="Generali",Mediaset Twentyseven FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/twentyseven
+#EXTINF:-1 tvg-id="Mediaset20.it" tvg-name="20 Mediaset HD" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/20mediaset.png" group-title="Generali",20 Mediaset HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="Italia2.it" tvg-name="Mediaset Italia 2" tvg-logo="http://picon.koolmedia.live/images/1_0_16_82_4B0_110_820000_0_0_0.png" group-title="Generali",Mediaset Italia 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/italia2
+#EXTINF:-1 tvg-id="LA5.it" tvg-name="La 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/La5_Mediaset.svg/330px-La5_Mediaset.svg.png" group-title="Generali",La 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/la5
+#EXTINF:-1 tvg-id="La7.it" tvg-name="La 7" tvg-logo="http://service.myvisio.life:80/images/92bf364b54b35839c004940982826038.png" group-title="Generali",La 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/la7
+#EXTINF:-1 tvg-id="La7d.it" tvg-name="La7d HD" tvg-logo="http://service.fullapple.me:8000/images/297d1a11b20eee15621f3f2dd5354e54.png" group-title="Generali",La7d HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/la7d
+#EXTINF:-1 tvg-id="MediasetExtra.it" tvg-name="Mediaset Extra" tvg-logo="http://picon.koolmedia.live/images/1_0_16_81_4B0_110_820000_0_0_0.png" group-title="Generali",Mediaset Extra
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/mediasetextra
+#EXTINF:-1 tvg-id="Tgcom24.it" tvg-name="TGcom24" tvg-logo="http://service.myvisio.life:80/images/ed0fa790b0c316c20e66b2db48e74254.png" group-title="Generali",TGcom24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/tgcom24
+#EXTINF:-1 tvg-id="Cielo.it" tvg-name="Cielo" tvg-logo="http://service.myvisio.life:80/images/be7740aa9d6f946349d2a54c8d133160.png" group-title="Generali",Cielo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/cielo
+#EXTINF:-1 tvg-id="Rai4.it" tvg-name="Rai 4 HD" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/rai4.png" group-title="Generali",Rai 4 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rai4
+#EXTINF:-1 tvg-id="Tv8.it" tvg-name="TV8" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/tv8.png" group-title="Generali",TV8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/tv8
+#EXTINF:-1 tvg-id="TV2000.it" tvg-name="TV 2000" tvg-logo="http://picon.koolmedia.live/images/1_0_19_2BAC_1AF4_FBFF_820000_0_0_0.png" group-title="Generali",TV 2000
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/tv2000
+#EXTINF:-1 tvg-id="Boing.it" tvg-name="Boing" tvg-logo="http://picon.koolmedia.live/images/4b6dabfc011eb79987fb2d3f4844cabb.png" group-title="Generali",Boing
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/boing
+#EXTINF:-1 tvg-id="Canale21.it" tvg-name="Canale 21" tvg-logo="http://picon.koolmedia.live/images/regionali/canale21.png" group-title="Generali",Canale 21
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/canale21
+#EXTINF:-1 tvg-id="Nove.it" tvg-name="Nove" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/nove-it.png" group-title="Generali",Nove
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVnresy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8
+#EXTINF:-1 tvg-id="Sportitalia.it" tvg-name="Sport Italia Live" tvg-logo="http://picon.koolmedia.live/images/1_0_1_1C17_384_110_EEEE0000_0_0_0.png" group-title="Generali",Sport Italia Live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://origin-001.streamup.eu/sportitalia/sihd_abr2/playlist.m3u8
+#EXTINF:-1 tvg-id="TopCalcio24.it" tvg-name="Top Calcio 24 Hd" tvg-logo="https://tvtvtv.ru/logos/top_calcio_24.png" group-title="Generali",Top Calcio 24 Hd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/topcalcio24
+#EXTINF:-1 tvg-id="RaiNews.it" tvg-name="Rai News 24" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/rainews24.png" group-title="Generali",Rai News 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rainews24
+#EXTINF:-1 tvg-id="Rai5.it" tvg-name="Rai 5" tvg-logo="http://picon.koolmedia.live/images/1_0_19_4534_30D4_13E_820000_0_0_0.png" group-title="Generali",Rai 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/rai5
+#EXTINF:-1 tvg-id="Raisport.it" tvg-name="Rai Sport HD" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/raisport+hd.png" group-title="Generali",Rai Sport HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/raisport
+#EXTINF:-1 tvg-id="RaiYoyo.it" tvg-name="Rai YoYo HD" tvg-logo="http://picon.koolmedia.live/images/1_0_19_4531_30D4_13E_820000_0_0_0.png" group-title="Generali",Rai YoYo HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/raiyoyo
+#EXTINF:-1 tvg-id="Iris.it" tvg-name="Iris HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/iris-it.png" group-title="Generali",Iris HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/iris
+#EXTINF:-1 tvg-id="Cine34.it" tvg-name="Cine34 HD" tvg-logo="http://service.fullapple.me:8000/images/7e61b0ff6b185e4e460e0535f1d79942.png" group-title="Generali",Cine34 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/cine34
+#EXTINF:-1 tvg-id="RaiStoria.it" tvg-name="Rai Storia" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/raistoria.png" group-title="Generali",Rai Storia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/raistoria
+#EXTINF:-1 tvg-id="RaiPremium.it" tvg-name="Rai Premium HD" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia@12-2023/logos/raipremium.png" group-title="Generali",Rai Premium HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://raipremium3-live.akamaized.net/hls/live/2018013/raipremium3/raipremium3/raipremium_2400/chunklist.m3u8
+#EXTINF:-1 tvg-id="RaiMovie.it" tvg-name="Rai Movie HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rai-movie-it.png" group-title="Generali",Rai Movie HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/raimovie
+#EXTINF:-1 tvg-id="RaiGulp.it" tvg-name="Rai Gulp HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rai-gulp-it.png" group-title="Generali",Rai Gulp HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://92.5.14.18:8080/play/raigulp
