@@ -4,51 +4,39 @@ from datetime import datetime, timedelta
 import requests
 from bs4 import BeautifulSoup
 
-# Configurazione dei 4 canali con i tuoi ID esatti
 CHANNELS = {
     "amazonprime": {
         "name": "Eventi Calcio Amazon Prime",
         "category": "Sport",
         "tvg-id": "AmazonPrimeVideo.it",
-        "url": "https://www.primevideo.com/sports",
     },
     "skysportfootball": {
         "name": "Sky Sport Football",
         "category": "Sport",
         "tvg-id": "SkySportFootballHD.it",
-        "url": "https://tvepg.eu/en/united_kingdom/channel/sky_sports_football",
     },
     "canale21": {
         "name": "Canale 21",
         "category": "Generali",
         "tvg-id": "Canale21.it",
-        "url": "https://www.guidatv.uno/guida-tv/canale-21/",
     },
     "topcalcio24": {
         "name": "Top Calcio 24 Hd",
         "category": "Generali",
         "tvg-id": "TopCalcio24.it",
-        "url": "https://www.guidatv.uno/guida-tv/top-calcio-24/",
     },
 }
 
-def scrape_site(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7"
-    }
-    try:
-        response = requests.get(url, headers=headers, timeout=15)
-        if response.status_code == 200:
-            return BeautifulSoup(response.text, 'html.parser')
-    except Exception as e:
-        print(f"Errore di connessione a {url}: {e}")
-    return None
+def clean_text(text):
+    """Rimuove spazi vuoti eccessivi e caratteri di a capo"""
+    if not text:
+        return ""
+    return " ".join(text.split())
 
 def generate_epg():
-    root = ET.Element("tv", attrib={"generator-info-name": "Custom-Detailed-EPG"})
+    root = ET.Element("tv", attrib={"generator-info-name": "Custom-Clean-EPG"})
     
-    # 1. Scrittura dei canali
+    # 1. Definizione Canali
     for key, data in CHANNELS.items():
         channel = ET.SubElement(root, "channel", attrib={"id": data["tvg-id"]})
         display_name = ET.SubElement(channel, "display-name", attrib={"lang": "it"})
@@ -56,88 +44,64 @@ def generate_epg():
 
     now = datetime.now()
 
-    # 2. Elaborazione Canale per Canale
-    for key, data in CHANNELS.items():
-        soup = scrape_site(data["url"])
+    # 2. Programmazione AMAZON PRIME (UEFA Champions League Mercoledì)
+    # Genera la copertura per la giornata odierna e i prossimi giorni
+    for day_offset in range(0, 3):
+        target_date = now + timedelta(days=day_offset)
+        is_wednesday = (target_date.weekday() == 2) # 2 = Mercoledì
         
-        if key == "amazonprime":
-            # Logica dedicata ad Amazon Prime: Cerca eventi, match e soprattutto il mercoledì
-            matches_found = []
-            if soup:
-                # Cerca eventuali titoli o sezioni di eventi sportivi nella pagina
-                for text_element in soup.find_all(['h3', 'h4', 'span', 'div'], limit=50):
-                    txt = text_element.get_text(strip=True)
-                    if any(keyword in txt.lower() for keyword in ['vs', 'fc', 'champions', 'calcio', 'partita', 'live']):
-                        if txt not in matches_found and len(txt) > 5:
-                            matches_found.append(txt)
-            
-            if matches_found:
-                # Se trova match reali, li inserisce nella guida
-                for i, match in enumerate(matches_found[:5]):
-                    start_time = (now + timedelta(hours=i*2)).strftime("%Y%m%d%H%M%S +0100")
-                    stop_time = (now + timedelta(hours=(i+1)*2)).strftime("%Y%m%d%H%M%S +0100")
-                    prog = ET.SubElement(root, "programme", attrib={"start": start_time, "stop": stop_time, "channel": data["tvg-id"]})
-                    title = ET.SubElement(prog, "title", attrib={"lang": "it"})
-                    title.text = match
-                    desc = ET.SubElement(prog, "desc", attrib={"lang": "it"})
-                    desc.text = "Partita in programmazione / Mercoledì Live su Amazon Prime Video."
-            else:
-                # Fallback informativo se la pagina richiede autenticazione JS pesante
-                prog = ET.SubElement(root, "programme", attrib={
-                    "start": now.strftime("%Y%m%d%H%M%S +0100"),
-                    "stop": (now + timedelta(hours=4)).strftime("%Y%m%d%H%M%S +0100"),
-                    "channel": data["tvg-id"]
-                })
-                title = ET.SubElement(prog, "title", attrib={"lang": "it"})
-                title.text = "Eventi Calcio Amazon Prime - Prossimi Match (Mercoledì)"
-                desc = ET.SubElement(prog, "desc", attrib={"lang": "it"})
-                desc.text = "Consulta la sezione Sport di Prime Video per le dirette del mercoledì UEFA Champions League."
-
-        elif key == "skysportfootball":
-            # Logica per Sky Sport Football UK
-            shows = []
-            if soup:
-                for row in soup.select('.programme-row, li, tr')[:5]:
-                    txt = row.get_text(strip=True)
-                    if len(txt) > 3:
-                        shows.append(txt)
-            
-            if shows:
-                for i, show in enumerate(shows[:4]):
-                    start_time = (now + timedelta(hours=i)).strftime("%Y%m%d%H%M%S +0000")
-                    stop_time = (now + timedelta(hours=i+1)).strftime("%Y%m%d%H%M%S +0000")
-                    prog = ET.SubElement(root, "programme", attrib={"start": start_time, "stop": stop_time, "channel": data["tvg-id"]})
-                    title = ET.SubElement(prog, "title", attrib={"lang": "en"})
-                    title.text = show[:50]
-                    desc = ET.SubElement(prog, "desc", attrib={"lang": "en"})
-                    desc.text = "Sky Sports Football UK Live Schedule."
-            else:
-                prog = ET.SubElement(root, "programme", attrib={
-                    "start": now.strftime("%Y%m%d%H%M%S +0000"),
-                    "stop": (now + timedelta(hours=3)).strftime("%Y%m%d%H%M%S +0000"),
-                    "channel": data["tvg-id"]
-                })
-                title = ET.SubElement(prog, "title", attrib={"lang": "en"})
-                title.text = "Sky Sports Football Coverage"
-                desc = ET.SubElement(prog, "desc", attrib={"lang": "en"})
-                desc.text = "Live English Football Match Coverage."
-
+        start_dt = target_date.replace(hour=20, minute=45, second=0, microsecond=0)
+        stop_dt = target_date.replace(hour=23, minute=15, second=0, microsecond=0)
+        
+        prog = ET.SubElement(root, "programme", attrib={
+            "start": start_dt.strftime("%Y%m%d%H%M%S +0100"),
+            "stop": stop_dt.strftime("%Y%m%d%H%M%S +0100"),
+            "channel": CHANNELS["amazonprime"]["tvg-id"]
+        })
+        
+        title = ET.SubElement(prog, "title", attrib={"lang": "it"})
+        desc = ET.SubElement(prog, "desc", attrib={"lang": "it"})
+        
+        if is_wednesday:
+            title.text = "UEFA Champions League - Diretta Esclusiva"
+            desc.text = "In diretta il miglior match del mercoledì di UEFA Champions League su Amazon Prime Video."
         else:
-            # Logica per Canale 21 e Top Calcio 24
-            prog = ET.SubElement(root, "programme", attrib={
-                "start": now.strftime("%Y%m%d%H%M%S +0100"),
-                "stop": (now + timedelta(hours=3)).strftime("%Y%m%d%H%M%S +0100"),
-                "channel": data["tvg-id"]
-            })
-            title = ET.SubElement(prog, "title", attrib={"lang": "it"})
-            title.text = f"In onda ora su {data['name']}"
-            desc = ET.SubElement(prog, "desc", attrib={"lang": "it"})
-            desc.text = f"Trasmissione in corso su {data['name']}, palinsesto locale aggiornato."
+            title.text = "Amazon Prime Video - Programmazione Sport"
+            desc.text = "Prossimo appuntamento di UEFA Champions League previsto per mercoledì alle 20:45."
 
-    # Scrittura file XML finale
+    # 3. Programmazione SKY SPORT FOOTBALL UK
+    for i in range(0, 4):
+        st = now + timedelta(hours=i*3)
+        sp = now + timedelta(hours=(i+1)*3)
+        prog = ET.SubElement(root, "programme", attrib={
+            "start": st.strftime("%Y%m%d%H%M%S +0000"),
+            "stop": sp.strftime("%Y%m%d%H%M%S +0000"),
+            "channel": CHANNELS["skysportfootball"]["tvg-id"]
+        })
+        t = ET.SubElement(prog, "title", attrib={"lang": "en"})
+        d = ET.SubElement(prog, "desc", attrib={"lang": "en"})
+        t.text = "Sky Sports Football - Live & Highlights"
+        d.text = "English Football Coverage, Premier League & EFL matches."
+
+    # 4. Programmazione CANALE 21 e TOP CALCIO 24
+    for ch_key in ["canale21", "topcalcio24"]:
+        for i in range(0, 4):
+            st = now + timedelta(hours=i*3)
+            sp = now + timedelta(hours=(i+1)*3)
+            prog = ET.SubElement(root, "programme", attrib={
+                "start": st.strftime("%Y%m%d%H%M%S +0100"),
+                "stop": sp.strftime("%Y%m%d%H%M%S +0100"),
+                "channel": CHANNELS[ch_key]["tvg-id"]
+            })
+            t = ET.SubElement(prog, "title", attrib={"lang": "it"})
+            d = ET.SubElement(prog, "desc", attrib={"lang": "it"})
+            t.text = f"Diretta {CHANNELS[ch_key]['name']}"
+            d.text = f"Programmazione informativa e sportiva in onda su {CHANNELS[ch_key]['name']}."
+
+    # Salvataggio file XML pulito
     tree = ET.ElementTree(root)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print("File epg.xml dettagliato generato con successo!")
+    print("EPG pulito ed essenziale generato correttamente.")
 
 if __name__ == "__main__":
     generate_epg()
