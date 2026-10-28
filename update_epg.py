@@ -102,3 +102,36 @@ def generate_epg():
             ("Tg Campania - Informazione", "Notiziario regionale in diretta con approfondimenti di cronaca e attualità."),
             ("Il Bello del Calcio", "La storica trasmissione sportiva dedicata alle squadre campane e al grande calcio."),
             ("Campania Sport", "Dibattiti, collegamenti e moviola in tempo reale sui temi del campionato."),
+            ("Spazio Aperto - Rubrica", "Approfondimenti culturali, sociali e di costume del territorio.")
+        ],
+        "topcalcio24": [
+            ("QSVS - Qui Studio a Voi Stadio", "Il celebre talk show calcistico con collegamenti in diretta e opinioni senza filtri."),
+            ("Top Calcio News", "Tutti gli aggiornamenti di calciomercato e le ultime news sulle squadre di Serie A."),
+            ("L'Editoriale di Top Calcio", "Analisi e commenti a caldo sulla giornata calcistica appena trascorsa."),
+            ("Stadio Aperto", "Approfondimenti e dibattiti con tifosi, giornalisti ed esperti di calcio.")
+        ]
+    }
+
+    for ch_key, shows in local_shows.items():
+        for day in range(0, 3):
+            for i, (show_title, show_desc) in enumerate(shows):
+                start_time = now.replace(hour=0, minute=0, second=0) + timedelta(days=day, hours=i*6)
+                stop_time = start_time + timedelta(hours=6)
+                
+                if stop_time > now:
+                    prog = ET.SubElement(root, "programme", attrib={
+                        "start": start_time.strftime("%Y%m%d%H%M%S +0100"),
+                        "stop": start_time.strftime("%Y%m%d%H%M%S +0100"),
+                        "channel": CHANNELS[ch_key]["tvg-id"]
+                    })
+                    t = ET.SubElement(prog, "title", attrib={"lang": "it"})
+                    t.text = show_title
+                    d = ET.SubElement(prog, "desc", attrib={"lang": "it"})
+                    d.text = show_desc
+
+    tree = ET.ElementTree(root)
+    tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
+    print("EPG 100% autonoma generata con successo!")
+
+if __name__ == "__main__":
+    generate_epg()
