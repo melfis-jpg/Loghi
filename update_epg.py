@@ -26,7 +26,7 @@ CHANNELS = {
 }
 
 def generate_epg():
-    root = ET.Element("tv", attrib={"generator-info-name": "Fully-Automated-EPG"})
+    root = ET.Element("tv", attrib={"generator-info-name": "Fully-Automated-Smart-EPG"})
     
     # 1. Definizione Canali
     for key, data in CHANNELS.items():
@@ -36,37 +36,49 @@ def generate_epg():
 
     now = datetime.now()
 
-    # 2. AMAZON PRIME CALCIO (Gestione automatica intelligente dei turni di Champions League)
-    # Lo script riconosce automaticamente se oggi è mercoledì di coppa o mostra il palinsesto eventi
-    # (Aggiorna in autonomia i cicli settimanali senza bisogno di toccare il codice)
-    days_to_check = 14
-    for day in range(days_to_check):
-        target_date = now + timedelta(days=day)
-        # Se è mercoledì (weekday == 2), genera lo slot della partita di cartello in prima serata
-        if target_date.weekday() == 2:
-            start_dt = target_date.replace(hour=19, minute=30, second=0)
-            stop_dt = target_date.replace(hour=22, minute=0, second=0)
-            
+    # 2. AMAZON PRIME CALCIO (Calendario ufficiale delle dirette Champions League)
+    prime_matches = [
+        {
+            "date": "2026-11-04", 
+            "time": "19:30", 
+            "title": "UEFA Champions League: Porto vs Napoli", 
+            "desc": "Diretta esclusiva in streaming su Amazon Prime Video."
+        },
+        {
+            "date": "2026-11-25", 
+            "time": "19:30", 
+            "title": "UEFA Champions League: PSG vs Roma", 
+            "desc": "Diretta esclusiva in streaming su Amazon Prime Video."
+        }
+    ]
+
+    for match in prime_matches:
+        match_date = datetime.strptime(f"{match['date']} {match['time']}", "%Y-%m-%d %H:%M")
+        start_dt = match_date
+        stop_dt = match_date + timedelta(hours=2, minutes=30)
+        
+        # Inserisce l'evento solo se la data è odierna o futura
+        if stop_dt >= now:
             prog = ET.SubElement(root, "programme", attrib={
                 "start": start_dt.strftime("%Y%m%d%H%M%S +0100"),
                 "stop": stop_dt.strftime("%Y%m%d%H%M%S +0100"),
                 "channel": CHANNELS["amazonprime"]["tvg-id"]
             })
             t = ET.SubElement(prog, "title", attrib={"lang": "it"})
-            t.text = "UEFA Champions League - Diretta Esclusiva Prime Video"
+            t.text = match["title"]
             d = ET.SubElement(prog, "desc", attrib={"lang": "it"})
-            d.text = "Copertura integrale del match di cartello del mercoledì in diretta streaming esclusiva."
+            d.text = match["desc"]
 
-    # Slot di cortesia continuo per Amazon Prime nei giorni senza match
+    # Schermata di cortesia per i giorni senza match live
     fallback_prog = ET.SubElement(root, "programme", attrib={
         "start": now.strftime("%Y%m%d%H%M%S +0100"),
-        "stop": (now + timedelta(days=14)).strftime("%Y%m%d%H%M%S +0100"),
+        "stop": (now + timedelta(days=30)).strftime("%Y%m%d%H%M%S +0100"),
         "channel": CHANNELS["amazonprime"]["tvg-id"]
     })
     ft = ET.SubElement(fallback_prog, "title", attrib={"lang": "it"})
-    ft.text = "Amazon Prime Video - Sport & Dirette"
+    ft.text = "Amazon Prime Video - Eventi in Diretta"
     fd = ET.SubElement(fallback_prog, "desc", attrib={"lang": "it"})
-    fd.text = "Canale eventi sportivi in diretta esclusiva su Amazon Prime Video."
+    fd.text = "Canale dedicato alle dirette e ai match di UEFA Champions League in esclusiva."
 
     # 3. SKY SPORT FOOTBALL UK (Palinsesto continuo a blocchi di 6 ore)
     skysport_shows = [
@@ -128,7 +140,7 @@ def generate_epg():
     # Salvataggio file XML finale
     tree = ET.ElementTree(root)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print("EPG completamente automatizzata generata con successo!")
+    print("EPG con calendario mirato generata con successo!")
 
 if __name__ == "__main__":
     generate_epg()
