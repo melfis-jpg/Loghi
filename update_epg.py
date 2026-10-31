@@ -53,7 +53,6 @@ def generate_epg():
     if it1_root is not None:
         for channel in it1_root.findall("channel"):
             ch_id = channel.get("id", "").lower()
-            # Cerchiamo i ID o i nomi corrispondenti a Canale 21 e Top Calcio 24
             if "canale21" in ch_id or "topcalcio" in ch_id or "top calcio" in ch_id:
                 root.append(channel)
         for programme in it1_root.findall("programme"):
@@ -61,7 +60,33 @@ def generate_epg():
             if "canale21" in ch_ref or "topcalcio" in ch_ref or "top calcio" in ch_ref:
                 root.append(programme)
 
-    # 4. AGGIUNTA MANUALE DI AMAZON PRIME (Eventi Champions League)
+    # 4. AGGIUNTA MANUALE DI MAN-GA (Canale anime e serie cult)
+    manga_channel = ET.SubElement(root, "channel", attrib={"id": "man-ga.it"})
+    manga_name = ET.SubElement(manga_channel, "display-name", attrib={"lang": "it"})
+    manga_name.text = "Man-Ga"
+
+    # Palinsesto rotativo continuativo per Man-Ga con le grandi serie storiche
+    manga_shows = [
+        ("Lady Georgie - Anime Classic", "Le avventure, i drammi e i romanzi nella Londra del XIX secolo con Georgie."),
+        ("Capitan Harlock - Spazio Pirata", "Le epiche battaglie della Arcadia contro le Mazoniane per la salvezza della Terra."),
+        ("Gotrinitron / Robot Storici", "I grandi classici dei robottoni giapponesi che hanno fatto la storia dell'animazione."),
+        ("Anime Night - Selezione Cult", "Gli episodi più amati e le pietre miliari della golden age degli anime giapponesi.")
+    ]
+
+    for day in range(0, 3):
+        for i, (show_title, show_desc) in enumerate(manga_shows):
+            start_time = now.replace(hour=0, minute=0, second=0) + timedelta(days=day, hours=i*6)
+            stop_time = start_time + timedelta(hours=6)
+            if stop_time > now:
+                prog = ET.SubElement(root, "programme", attrib={
+                    "start": start_time.strftime("%Y%m%d%H%M%S +0100"),
+                    "stop": stop_time.strftime("%Y%m%d%H%M%S +0100"),
+                    "channel": "man-ga.it"
+                })
+                ET.SubElement(prog, "title", attrib={"lang": "it"}).text = show_title
+                ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = show_desc
+
+    # 5. AGGIUNTA MANUALE DI AMAZON PRIME (Eventi Champions League)
     amazon_channel = ET.SubElement(root, "channel", attrib={"id": "AmazonPrimeVideo.it"})
     display_name = ET.SubElement(amazon_channel, "display-name", attrib={"lang": "it"})
     display_name.text = "Eventi Calcio Amazon Prime"
@@ -98,7 +123,7 @@ def generate_epg():
     # Salvataggio file XML finale
     tree = ET.ElementTree(root)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print("EPG ibrida con Epg_Ripper_IT1 generata con successo!")
+    print("EPG ibrida con Man-Ga generata con successo!")
 
 if __name__ == "__main__":
     generate_epg()
