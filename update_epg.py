@@ -4,7 +4,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
-# URL delle sorgenti ufficiali
+# URL delle sorgenti ufficiali stabili
 URL_SKY_UK = "https://www.open-epg.com/files/unitedkingdom.xml.gz"
 URL_DAZN_IT = "https://www.open-epg.com/files/italy8.xml.gz"
 URL_EPG_IT1 = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
@@ -53,11 +53,12 @@ def generate_epg():
     if it1_root is not None:
         for channel in it1_root.findall("channel"):
             ch_id = channel.get("id", "").lower()
-            if "canale21" in ch_id or "topcalcio" in ch_id or "top calcio" in ch_id or "man-ga" in ch_id or "manga" in ch_id:
+            ch_name = "".join(channel.itertext()).lower()
+            if any(k in ch_id or k in ch_name for k in ["canale21", "topcalcio", "top calcio", "man-ga", "manga"]):
                 root.append(channel)
         for programme in it1_root.findall("programme"):
             ch_ref = programme.get("channel", "").lower()
-            if "canale21" in ch_ref or "topcalcio" in ch_ref or "top calcio" in ch_ref or "man-ga" in ch_ref or "manga" in ch_ref:
+            if any(k in ch_ref for k in ["canale21", "topcalcio", "top calcio", "man-ga", "manga"]):
                 root.append(programme)
 
     # 4. AGGIUNTA MANUALE DI AMAZON PRIME (Eventi Champions League)
@@ -96,7 +97,7 @@ def generate_epg():
     # Salvataggio file XML finale
     tree = ET.ElementTree(root)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print("EPG ibrida con Man-Ga automatico generata con successo!")
+    print("EPG ibrida aggiornata con successo!")
 
 if __name__ == "__main__":
     generate_epg()
