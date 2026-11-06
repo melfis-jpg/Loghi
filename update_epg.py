@@ -4,6 +4,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
+# URL delle sorgenti ufficiali
 URL_SKY_UK = "https://www.open-epg.com/files/unitedkingdom.xml.gz"
 URL_DAZN_IT = "https://www.open-epg.com/files/italy8.xml.gz"
 
@@ -52,8 +53,7 @@ def generate_epg():
         except Exception as e:
             print(f"Errore Sky UK: {e}")
 
-    # 3. CANALI LOCALI E SPECIALI (Man-Ga, Top Calcio 24, Canale 21, Amazon Prime)
-    # Definiamo i canali con i loro ID ufficiali standard per le IPTV
+    # 3. CANALI SPECIALI E LOCALI (Man-Ga, Top Calcio 24, Canale 21, Amazon Prime)
     channels_data = {
         "man-ga.it": {
             "name": "Man-Ga",
@@ -94,11 +94,11 @@ def generate_epg():
         display_name = ET.SubElement(ch_elem, "display-name", attrib={"lang": "it"})
         display_name.text = data["name"]
 
-        # Aggiunta programmi per Man-Ga, Top Calcio 24 e Canale 21
+        # Aggiunta programmi ciclici per i canali standard
         if "shows" in data:
-            for day in range(0, 3):
+            for day in range(-1, 4):
                 for i, (title, desc) in enumerate(data["shows"]):
-                    start_time = now.replace(hour=0, minute=0, second=0) + timedelta(days=day, hours=i*6)
+                    start_time = now.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=day, hours=i*6)
                     stop_time = start_time + timedelta(hours=6)
                     if stop_time > now:
                         prog = ET.SubElement(root, "programme", attrib={
@@ -109,7 +109,7 @@ def generate_epg():
                         ET.SubElement(prog, "title", attrib={"lang": "it"}).text = title
                         ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = desc
 
-        # Aggiunta programmi per Amazon Prime
+        # Aggiunta programmi e blocchi per Amazon Prime Video (ID: AmazonPrimeVideo.it)
         if data.get("is_prime"):
             prime_matches = [
                 {"date": "2026-11-04", "time": "19:30", "title": "UEFA Champions League: Porto vs Napoli", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."},
@@ -128,18 +128,32 @@ def generate_epg():
                     ET.SubElement(prog, "title", attrib={"lang": "it"}).text = match["title"]
                     ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = match["desc"]
 
-            fallback_prime = ET.SubElement(root, "programme", attrib={
-                "start": now.strftime("%Y%m%d%H%M%S +0100"),
-                "stop": (now + timedelta(days=30)).strftime("%Y%m%d%H%M%S +0100"),
-                "channel": ch_id
-            })
-            ET.SubElement(fallback_prime, "title", attrib={"lang": "it"}).text = "Amazon Prime Video - Eventi in Diretta"
-            ET.SubElement(fallback_prime, "desc", attrib={"lang": "it"}).text = "Canale dedicato alle dirette e ai match di UEFA Champions League in esclusiva."
+            # Blocchi giornalieri continui per evitare che Televizo mostri l'EPG vuota su Amazon Prime
+            for day in range(-1, 5):
+                base_date = now.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=day)
+                slots = [
+                    ("00:00", "06:00", "Amazon Prime Video - Contenuti On Demand", "Film, serie TV ed eventi in streaming esclusivo."),
+                    ("06:00", "14:00", "Amazon Prime Video - Serie e Cinema", "Panoramica delle produzioni originali e cataloghi in streaming."),
+                    ("14:00", "20:00", "Amazon Prime Video - Intrattenimento", "Show, film e programmi in onda sulla piattaforma."),
+                    ("20:00", "23:59", "Amazon Prime Video - Serata Prime", "Cinema in prima serata e grandi eventi sportivi in esclusiva.")
+                ]
+                for start_h, stop_h, title, desc in slots:
+                    start_dt = datetime.strptime(f"{base_date.strftime('%Y-%m-%d')} {start_h}", "%Y-%m-%d %H:%M")
+                    stop_dt = datetime.strptime(f"{base_date.strftime('%Y-%m-%d')} {stop_h}", "%Y-%m-%d %H:%M") if stop_h != "23:59" else base_date.replace(hour=23, minute=59, second=59)
+                    
+                    if stop_dt >= now:
+                        prog = ET.SubElement(root, "programme", attrib={
+                            "start": start_dt.strftime("%Y%m%d%H%M%S +0100"),
+                            "stop": stop_dt.strftime("%Y%m%d%H%M%S +0100"),
+                            "channel": ch_id
+                        })
+                        ET.SubElement(prog, "title", attrib={"lang": "it"}).text = title
+                        ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = desc
 
     # Salvataggio file XML finale
     tree = ET.ElementTree(root)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print("File epg.xml generato con successo e canali garantiti!")
+    print("File epg.xml generato con successo!")
 
 if __name__ == "__main__":
     generate_epg()
