@@ -112,9 +112,7 @@ def generate_epg():
         # Aggiunta programmi e blocchi per Amazon Prime Video (ID: AmazonPrimeVideo.it)
         if data.get("is_prime"):
             prime_matches = [
-                {"date": "2026-11-10", "time": "20:45", "title": "UEFA Champions League: Roma vs Real Madrid", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."},
-                {"date": "2026-11-25", "time": "19:30", "title": "UEFA Champions League: PSG vs Roma", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."},
-                {"date": "2026-12-02", "time": "20:45", "title": "UEFA Champions League: Porto vs Napoli", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."}
+                {"date": "2026-11-25", "time": "19:30", "title": "UEFA Champions League: PSG vs Roma", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."}
             ]
             for match in prime_matches:
                 match_date = datetime.strptime(f"{match['date']} {match['time']}", "%Y-%m-%d %H:%M")
