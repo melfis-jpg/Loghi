@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 # URL delle sorgenti ufficiali
 URL_SKY_UK = "https://www.open-epg.com/files/unitedkingdom.xml.gz"
 URL_DAZN_IT = "https://www.open-epg.com/files/italy8.xml.gz"
+URL_EPG_IT1 = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 
 def download_and_parse_xml(url):
     """Scarica e decomprime un file XML.GZ remoto in sicurezza"""
@@ -38,22 +39,27 @@ def generate_epg():
         except Exception as e:
             print(f"Errore DAZN: {e}")
 
-    # 2. SKY SPORTS FOOTBALL UK
+    # 2. SKY SPORTS FOOTBALL UK E SKY SPORT 1 (Risoluzione problema "no data")
     sky_root = download_and_parse_xml(URL_SKY_UK)
-    if sky_root is not None:
-        try:
-            for channel in sky_root.findall("channel"):
-                ch_id = channel.get("id", "").lower()
-                if "football" in ch_id or "skysports" in ch_id:
-                    root.append(channel)
-            for programme in sky_root.findall("programme"):
-                ch_ref = programme.get("channel", "").lower()
-                if "football" in ch_ref or "skysports" in ch_ref:
-                    root.append(programme)
-        except Exception as e:
-            print(f"Errore Sky UK: {e}")
+    it1_root = download_and_parse_xml(URL_EPG_IT1)
+    
+    # Cerchiamo Sky Sport 1 e Sky Sport Football nelle sorgenti disponibili
+    for source in [it1_root, sky_root]:
+        if source is not None:
+            try:
+                for channel in source.findall("channel"):
+                    ch_id = channel.get("id", "").lower()
+                    ch_name = "".join(channel.itertext()).lower()
+                    if "skysportuno" in ch_id or "sky sport uno" in ch_name or "skysportsfootball" in ch_id or "football" in ch_id:
+                        root.append(channel)
+                for programme in source.findall("programme"):
+                    ch_ref = programme.get("channel", "").lower()
+                    if "skysportuno" in ch_ref or "skysportsfootball" in ch_ref:
+                        root.append(programme)
+            except Exception as e:
+                print(f"Errore Sky Sport channels: {e}")
 
-    # 3. CANALI SPECIALI E LOCALI (Man-Ga, Top Calcio 24, Canale 21, Amazon Prime)
+    # 3. CANALI SPECIALI, LOCALI E SKY PRIMAFILA (Vetrina + Da 1 a 18)
     channels_data = {
         "man-ga.it": {
             "name": "Man-Ga",
@@ -85,6 +91,102 @@ def generate_epg():
         "AmazonPrimeVideo.it": {
             "name": "Eventi Calcio Amazon Prime",
             "is_prime": True
+        },
+        # --- CONFIGURAZIONE SKY PRIMAFILA (Vetrina + 1 a 18) ---
+        "Primafila.it": {
+            "name": "Vetrina Sky Primafila",
+            "movie": "Vetrina Sky Primafila - Lista film in primo piano",
+            "desc": "Panoramica completa delle prime visioni e dei titoli in programmazione su Sky Primafila."
+        },
+        "Primafila1.it": {
+            "name": "PRIMAFILA 1",
+            "movie": "BLACK PHONE 2 2025",
+            "desc": "Sky Primafila Premiere 1 HD - Prima visione cinematografica."
+        },
+        "Primafila2.it": {
+            "name": "PRIMAFILA 2",
+            "movie": "SUPERMAN 2025",
+            "desc": "Sky Primafila Premiere 2 HD - Prima visione cinematografica."
+        },
+        "Primafila3.it": {
+            "name": "PRIMAFILA 3",
+            "movie": "MISSION IMPOSSIBLE 2025",
+            "desc": "Sky Primafila Premiere 3 HD - Prima visione cinematografica."
+        },
+        "Primafila4.it": {
+            "name": "PRIMAFILA 4",
+            "movie": "WEAPONS 2025",
+            "desc": "Sky Primafila Premiere 4 HD - Prima visione cinematografica."
+        },
+        "Primafila5.it": {
+            "name": "PRIMAFILA 5",
+            "movie": "TROLL 2025",
+            "desc": "Sky Primafila Premiere 5 HD - Prima visione cinematografica."
+        },
+        "Primafila6.it": {
+            "name": "PRIMAFILA 6",
+            "movie": "E COLPA NOSTRA 2025",
+            "desc": "Sky Primafila Premiere 6 HD - Prima visione cinematografica."
+        },
+        "Primafila7.it": {
+            "name": "PRIMAFILA 7",
+            "movie": "LILO E STITCH 2025",
+            "desc": "Sky Primafila Premiere 7 HD - Prima visione cinematografica."
+        },
+        "Primafila8.it": {
+            "name": "PRIMAFILA 8",
+            "movie": "NOBODY 2 2025",
+            "desc": "Sky Primafila Premiere 8 HD - Prima visione cinematografica."
+        },
+        "Primafila9.it": {
+            "name": "PRIMAFILA 9",
+            "movie": "JURASSIC WORLD 2025",
+            "desc": "Sky Primafila Premiere 9 HD - Prima visione cinematografica."
+        },
+        "Primafila10.it": {
+            "name": "PRIMAFILA 10",
+            "movie": "THE CONJURING IL RITO 2025",
+            "desc": "Sky Primafila Premiere 10 HD - Prima visione cinematografica."
+        },
+        "Primafila11.it": {
+            "name": "PRIMAFILA 11",
+            "movie": "LILO E STITCH 2025",
+            "desc": "Sky Primafila 11 - Film in programmazione continuativa."
+        },
+        "Primafila12.it": {
+            "name": "PRIMAFILA 12",
+            "movie": "LILO E STITCH 2025",
+            "desc": "Sky Primafila 12 - Film in programmazione continuativa."
+        },
+        "Primafila13.it": {
+            "name": "PRIMAFILA 13",
+            "movie": "LILO E STITCH 2025",
+            "desc": "Sky Primafila 13 - Film in programmazione continuativa."
+        },
+        "Primafila14.it": {
+            "name": "PRIMAFILA 14",
+            "movie": "TROLL 2 2025",
+            "desc": "Sky Primafila 14 - Film in programmazione continuativa."
+        },
+        "Primafila15.it": {
+            "name": "PRIMAFILA 15",
+            "movie": "TROLL 2 2025",
+            "desc": "Sky Primafila 15 - Film in programmazione continuativa."
+        },
+        "Primafila16.it": {
+            "name": "PRIMAFILA 16",
+            "movie": "TROLL 2 2025",
+            "desc": "Sky Primafila 16 - Film in programmazione continuativa."
+        },
+        "Primafila17.it": {
+            "name": "PRIMAFILA 17",
+            "movie": "TROLL 2 2025",
+            "desc": "Sky Primafila 17 - Film in programmazione continuativa."
+        },
+        "Primafila18.it": {
+            "name": "PRIMAFILA 18",
+            "movie": "TROLL 2 2025",
+            "desc": "Sky Primafila 18 - Film in programmazione continuativa."
         }
     }
 
@@ -94,7 +196,7 @@ def generate_epg():
         display_name = ET.SubElement(ch_elem, "display-name", attrib={"lang": "it"})
         display_name.text = data["name"]
 
-        # Aggiunta programmi ciclici per i canali standard
+        # Aggiunta programmi ciclici per i canali standard (Man-Ga, Top Calcio, Canale 21)
         if "shows" in data:
             for day in range(-1, 4):
                 for i, (title, desc) in enumerate(data["shows"]):
@@ -109,10 +211,33 @@ def generate_epg():
                         ET.SubElement(prog, "title", attrib={"lang": "it"}).text = title
                         ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = desc
 
+        # Gestione Sky Primafila (Vetrina e da 1 a 18) con blocchi giornalieri continui
+        if "movie" in data:
+            for day in range(-1, 5):
+                base_date = now.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=day)
+                slots = [
+                    ("00:00", "06:00", data["movie"], data["desc"]),
+                    ("06:00", "12:00", data["movie"], data["desc"]),
+                    ("12:00", "18:00", data["movie"], data["desc"]),
+                    ("18:00", "23:59", data["movie"], data["desc"])
+                ]
+                for start_h, stop_h, title, desc in slots:
+                    start_dt = datetime.strptime(f"{base_date.strftime('%Y-%m-%d')} {start_h}", "%Y-%m-%d %H:%M")
+                    stop_dt = datetime.strptime(f"{base_date.strftime('%Y-%m-%d')} {stop_h}", "%Y-%m-%d %H:%M") if stop_h != "23:59" else base_date.replace(hour=23, minute=59, second=59)
+                    
+                    if stop_dt >= now:
+                        prog = ET.SubElement(root, "programme", attrib={
+                            "start": start_dt.strftime("%Y%m%d%H%M%S +0100"),
+                            "stop": stop_dt.strftime("%Y%m%d%H%M%S +0100"),
+                            "channel": ch_id
+                        })
+                        ET.SubElement(prog, "title", attrib={"lang": "it"}).text = title
+                        ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = desc
+
         # Aggiunta programmi e blocchi per Amazon Prime Video (ID: AmazonPrimeVideo.it)
         if data.get("is_prime"):
             prime_matches = [
-                {"date": "2026-11-25", "time": "19:30", "title": "UEFA Champions League: PSG vs Roma", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."}
+                {"date": "2026-11-25", "time": "19:30", "title": "UEFA Champions League: PSG vs Roma", "desc": "Diretta esclusiva in streaming su Amazon Prime Video."},
             ]
             for match in prime_matches:
                 match_date = datetime.strptime(f"{match['date']} {match['time']}", "%Y-%m-%d %H:%M")
@@ -127,7 +252,7 @@ def generate_epg():
                     ET.SubElement(prog, "title", attrib={"lang": "it"}).text = match["title"]
                     ET.SubElement(prog, "desc", attrib={"lang": "it"}).text = match["desc"]
 
-            # Blocchi giornalieri continui per evitare che Televizo mostri l'EPG vuota su Amazon Prime
+            # Blocchi giornalieri continui per Amazon Prime
             for day in range(-1, 5):
                 base_date = now.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=day)
                 slots = [
@@ -152,7 +277,7 @@ def generate_epg():
     # Salvataggio file XML finale
     tree = ET.ElementTree(root)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print("File epg.xml generato con successo!")
+    print("File epg.xml generato con successo e Primafila configurati!")
 
 if __name__ == "__main__":
     generate_epg()
