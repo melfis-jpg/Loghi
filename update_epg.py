@@ -98,27 +98,27 @@ def generate_epg():
             "movie": "Vetrina Sky Primafila - Lista film in primo piano",
             "desc": "Panoramica completa delle prime visioni e dei titoli in programmazione su Sky Primafila."
         },
-        "Primafila1.it": {
+        "Primafila1HD.it": {
             "name": "PRIMAFILA 1",
             "movie": "BLACK PHONE 2 2025",
             "desc": "Sky Primafila Premiere 1 HD - Prima visione cinematografica."
         },
-        "Primafila2.it": {
+        "Primafila2HD.it": {
             "name": "PRIMAFILA 2",
             "movie": "SUPERMAN 2025",
             "desc": "Sky Primafila Premiere 2 HD - Prima visione cinematografica."
         },
-        "Primafila3.it": {
+        "Primafila3HD.it": {
             "name": "PRIMAFILA 3",
             "movie": "MISSION IMPOSSIBLE 2025",
             "desc": "Sky Primafila Premiere 3 HD - Prima visione cinematografica."
         },
-        "Primafila4.it": {
+        "Primafila4HD.it": {
             "name": "PRIMAFILA 4",
             "movie": "WEAPONS 2025",
             "desc": "Sky Primafila Premiere 4 HD - Prima visione cinematografica."
         },
-        "Primafila5.it": {
+        "Primafila5HD.it": {
             "name": "PRIMAFILA 5",
             "movie": "TROLL 2025",
             "desc": "Sky Primafila Premiere 5 HD - Prima visione cinematografica."
