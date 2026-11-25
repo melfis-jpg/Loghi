@@ -197,6 +197,56 @@ def generate_epg():
             "movie": "TROLL 2 2025",
             "desc": "Sky Primafila 18 - Film in programmazione continuativa."
         }
+        "Primafila-4k.it": {
+            "name": "Vetrina Sky Primafila 4k",
+            "movie": "Vetrina Sky Primafila - Lista film in primo piano",
+            "desc": "Panoramica completa delle prime visioni e dei titoli in programmazione su Sky Primafila."
+        },
+        "Primafila1-4k.it": {
+            "name": "PRIMAFILA 1 4K",
+            "movie": "SNAKE EYES: G.I. JOE - LE ORIGINI - THE SUICIDE SQUAD - MISSIONE SUICIDA",
+            "desc": "Sky Primafila Premiere 1 HD - Prima visione cinematografica."
+        },
+        "Primafila2-4k.it": {
+            "name": "PRIMAFILA 2 4K",
+            "movie": "BLACK WIDOW - JUNGLE CRUISE",
+            "desc": "Sky Primafila Premiere 2 HD - Prima visione cinematografica."
+        },
+        "Primafila3-4k.it": {
+            "name": "PRIMAFILA 3 4K",
+            "movie": "FAST E FURIOS 9 - THE FAST SAGA",
+            "desc": "Sky Primafila Premiere 3 HD - Prima visione cinematografica."
+        },
+        "Primafila4-4k.it": {
+            "name": "PRIMAFILA 4 4K",
+            "movie": "RITORNO AL CRIMINE - MIA MOGLIE è UN FANTASMA - I CROODS 2 - UNA NUOVA ERA",
+            "desc": "Sky Primafila Premiere 4 HD - Prima visione cinematografica."
+        },
+        "Primafila5-4k.it": {
+            "name": "PRIMAFILA 5 4K",
+            "movie": "SPACE JAM - NEW LEGENDS - PETER RABBIT 2: UNBIRBANTE IN FUGA",
+            "desc": "Sky Primafila Premiere 5 HD - Prima visione cinematografica."
+        },
+        "Primafila6-4k.it": {
+            "name": "PRIMAFILA 6 4K",
+            "movie": "L'ULTIMO MERCENARIO - JOLT",
+            "desc": "Sky Primafila Premiere 6 HD - Prima visione cinematografica."
+        },
+        "Primafila7-4k.it": {
+            "name": "PRIMAFILA 7 4K",
+            "movie": "LUCA - VIVO",
+            "desc": "Sky Primafila Premiere 7 HD - Prima visione cinematografica."
+        },
+        "Primafila8-4k.it": {
+            "name": "PRIMAFILA 8 4K",
+            "movie": "LA NOTTE DEL GIUDIZIO PER SEMPRE - BLOOD RED SKY",
+            "desc": "Sky Primafila Premiere 8 HD - Prima visione cinematografica."
+        },
+        "Primafila9-4k.it": {
+            "name": "PRIMAFILA 9 4K",
+            "movie": "COME TI AMMAZZO IL BODYGUARD 2 - LA GUERRA DI DOMANI",
+            "desc": "Sky Primafila Premiere 9 HD - Prima visione cinematografica."
+        },
     }
 
     for ch_id, data in channels_data.items():
