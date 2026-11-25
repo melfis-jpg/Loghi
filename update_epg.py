@@ -295,7 +295,7 @@ def generate_epg():
                 if match_stop >= now:
                     matches_by_date[match["date"]] = (match_start, match_stop, match["title"], match["desc"])
 
-            for day in range(-1, 25):
+            for day in range(-1, 32):
                 base_date = now.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=day)
                 date_str = base_date.strftime("%Y-%m-%d")
 
