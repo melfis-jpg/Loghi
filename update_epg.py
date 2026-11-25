@@ -68,7 +68,7 @@ def generate_epg():
             except Exception as e:
                 print(f"Errore Sky Sport channels: {e}")
 
-    # 3. CANALI SPECIALI, LOCALI E SKY PRIMAFILA (Vetrina + Da 1 a 18)
+    # 3. CANALI SPECIALI, LOCALI E SKY PRIMAFILA (Vetrina + Da 1 a 18 + 4K)
     channels_data = {
         "man-ga.it": {
             "name": "Man-Ga",
@@ -196,7 +196,8 @@ def generate_epg():
             "name": "PRIMAFILA 18",
             "movie": "TROLL 2 2025",
             "desc": "Sky Primafila 18 - Film in programmazione continuativa."
-        }
+        },
+        # --- CONFIGURAZIONE SKY PRIMAFILA 4K ---
         "Primafila-4k.it": {
             "name": "Vetrina Sky Primafila 4k",
             "movie": "Vetrina Sky Primafila - Lista film in primo piano",
@@ -204,13 +205,13 @@ def generate_epg():
         },
         "Primafila1-4k.it": {
             "name": "PRIMAFILA 1 4K",
-            "movie": "SNAKE EYES: G.I. JOE - LE ORIGINI - THE SUICIDE SQUAD - MISSIONE SUICIDA",
-            "desc": "Sky Primafila Premiere 1 HD - Prima visione cinematografica."
+            "movie": "SNAKE EYES: G.I. JOE - LE ORIGINI • THE SUICIDE SQUAD - MISSIONE SUICIDA",
+            "desc": "In programmazione:\n• SNAKE EYES: G.I. JOE - LE ORIGINI\n• THE SUICIDE SQUAD - MISSIONE SUICIDA"
         },
         "Primafila2-4k.it": {
             "name": "PRIMAFILA 2 4K",
-            "movie": "BLACK WIDOW - JUNGLE CRUISE",
-            "desc": "Sky Primafila Premiere 2 HD - Prima visione cinematografica."
+            "movie": "BLACK WIDOW • JUNGLE CRUISE",
+            "desc": "In programmazione:\n• BLACK WIDOW\n• JUNGLE CRUISE"
         },
         "Primafila3-4k.it": {
             "name": "PRIMAFILA 3 4K",
@@ -219,34 +220,34 @@ def generate_epg():
         },
         "Primafila4-4k.it": {
             "name": "PRIMAFILA 4 4K",
-            "movie": "RITORNO AL CRIMINE - MIA MOGLIE è UN FANTASMA - I CROODS 2 - UNA NUOVA ERA",
-            "desc": "Sky Primafila Premiere 4 HD - Prima visione cinematografica."
+            "movie": "RITORNO AL CRIMINE • MIA MOGLIE È UN FANTASMA • I CROODS 2 - UNA NUOVA ERA",
+            "desc": "In programmazione:\n• RITORNO AL CRIMINE\n• MIA MOGLIE È UN FANTASMA\n• I CROODS 2 - UNA NUOVA ERA"
         },
         "Primafila5-4k.it": {
             "name": "PRIMAFILA 5 4K",
-            "movie": "SPACE JAM - NEW LEGENDS - PETER RABBIT 2: UNBIRBANTE IN FUGA",
-            "desc": "Sky Primafila Premiere 5 HD - Prima visione cinematografica."
+            "movie": "SPACE JAM - NEW LEGENDS • PETER RABBIT 2: UN BIRBANTE IN FUGA",
+            "desc": "In programmazione:\n• SPACE JAM - NEW LEGENDS\n• PETER RABBIT 2: UN BIRBANTE IN FUGA"
         },
         "Primafila6-4k.it": {
             "name": "PRIMAFILA 6 4K",
-            "movie": "L'ULTIMO MERCENARIO - JOLT",
-            "desc": "Sky Primafila Premiere 6 HD - Prima visione cinematografica."
+            "movie": "L'ULTIMO MERCENARIO • JOLT",
+            "desc": "In programmazione:\n• L'ULTIMO MERCENARIO\n• JOLT"
         },
         "Primafila7-4k.it": {
             "name": "PRIMAFILA 7 4K",
-            "movie": "LUCA - VIVO",
-            "desc": "Sky Primafila Premiere 7 HD - Prima visione cinematografica."
+            "movie": "LUCA • VIVO",
+            "desc": "In programmazione:\n• LUCA\n• VIVO"
         },
         "Primafila8-4k.it": {
             "name": "PRIMAFILA 8 4K",
-            "movie": "LA NOTTE DEL GIUDIZIO PER SEMPRE - BLOOD RED SKY",
-            "desc": "Sky Primafila Premiere 8 HD - Prima visione cinematografica."
+            "movie": "LA NOTTE DEL GIUDIZIO PER SEMPRE • BLOOD RED SKY",
+            "desc": "In programmazione:\n• LA NOTTE DEL GIUDIZIO PER SEMPRE\n• BLOOD RED SKY"
         },
         "Primafila9-4k.it": {
             "name": "PRIMAFILA 9 4K",
-            "movie": "COME TI AMMAZZO IL BODYGUARD 2 - LA GUERRA DI DOMANI",
-            "desc": "Sky Primafila Premiere 9 HD - Prima visione cinematografica."
-        },
+            "movie": "COME TI AMMAZZO IL BODYGUARD 2 • LA GUERRA DI DOMANI",
+            "desc": "In programmazione:\n• COME TI AMMAZZO IL BODYGUARD 2\n• LA GUERRA DI DOMANI"
+        }
     }
 
     for ch_id, data in channels_data.items():
@@ -263,7 +264,7 @@ def generate_epg():
                     if stop_time > now:
                         add_programme(root, ch_id, start_time, stop_time, title, desc)
 
-        # Gestione Sky Primafila (Vetrina e da 1 a 18) con blocchi giornalieri continui
+        # Gestione Sky Primafila (Vetrina, da 1 a 18 e 4K) con blocchi giornalieri continui
         if "movie" in data:
             for day in range(-1, 5):
                 base_date = now.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=day)
